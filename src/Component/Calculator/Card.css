@@ -1,0 +1,255 @@
+.calculator {
+  background-color: var(--light-grayish-cyan-2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: row;
+  border-radius: 1.4rem;
+  padding: 2.3rem;
+  height: 479px;
+}
+
+label {
+  color: var(--dark-grayish-cyan-1);
+  font-size: 15px;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+/* Bill Section */
+.inputSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.bill-input {
+  background-image: url("../../assets/icon-dollar.svg");
+  margin-bottom: 2rem;
+}
+
+input {
+  background-color: var(--light-grayish-cyan-1);
+  height: 48px;
+  padding: 9px;
+  padding-right: 18px;
+  background-position: 17px 18px;
+  border-radius: 4px;
+  font-size: 24px;
+  border: none;
+  outline: none;
+  background-repeat: no-repeat;
+  text-align: right;
+  font-weight: bolder;
+  color: var(--very-dark-cyan);
+  font-family: var(--fontFamily);
+}
+
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+
+/* Select Tip Section */
+.tip {
+  display: grid;
+  justify-content: left;
+  margin-top: 1rem;
+  grid-template-columns: 135px 135px 135px;
+  row-gap: 1em;
+  column-gap: 17px;
+  margin-bottom: 2rem;
+}
+
+button {
+  font-family: var(--fontFamily);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+  font-weight: bolder;
+  background-color: var(--very-dark-cyan);
+  color: white;
+  justify-content: center;
+  height: 48px;
+  font-size: 24px;
+  border-radius: 4px;
+}
+
+button:focus{
+  background-color: var(--strong-cyan);
+  color: var(--very-dark-cyan);
+  font-weight: bolder;
+}
+
+.tip-custom {
+  width: 100%;
+  color: var(--very-dark-cyan);
+}
+
+.tip-option:hover {
+  background-color: var(--strong-cyan);
+  color: var(--very-dark-cyan);
+  font-weight: bolder;
+}
+
+/* Number of People Section */
+.peopleSection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.error {
+  color: red;
+}
+
+.people-input {
+  background-image: url("../../assets/icon-person.svg");
+}
+
+/* Output Section */
+.outputSection {
+  margin-left: 3rem;
+  background-color: var(--very-dark-cyan);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 100%;
+  font-size: 60%;
+  border-radius: 0.5rem;
+  align-content: space-between;
+  padding: 48px 38px;
+}
+
+.tip-amount {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: large;
+  margin-bottom: 2rem;
+}
+
+.total-amount {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: large;
+  margin-bottom: 2rem;
+}
+
+.divided-person {
+  font-weight: bold;
+  font-size: 12px;
+  color: var(--dark-grayish-cyan-2);
+}
+
+.amount {
+  font-weight: bold;
+  font-size: 40px;
+  color: var(--strong-cyan);
+}
+
+/* Reset btn Section */
+.resetSection {
+  background-color: var(--strong-cyan);
+  cursor: pointer;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  color: var(--very-dark-cyan);
+  padding: 13px 0 13px 0;
+  margin-top: 6rem;
+  border-radius: 0.3rem;
+  font-size: 20px;
+}
+
+/* For Mobile view*/
+@media only screen and (max-width: 766px) {
+  .calculator {
+    background-color: var(--light-grayish-cyan-2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  label {
+    color: var(--dark-grayish-cyan-1);
+    font-size: 15px;
+    font-family: var(--fontFamily);
+    margin-bottom: 6px;
+    font-weight: 600;
+  }
+
+  .inputSection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .bill-input {
+    margin-bottom: 36px;
+  }
+
+  input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    background-position: 17px 14px;
+    background-repeat: no-repeat;
+  }
+
+  .tip {
+    margin-top: 0.4rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 144px 144px;
+    row-gap: 1em;
+    column-gap: 18px;
+    margin-bottom: 1.4rem;
+  }
+
+  button{
+      font-family: var(--fontFamily);
+      font-weight: 600;
+  }
+
+  .people-input {
+    margin-bottom: 36px;
+  }
+
+  .outputSection {
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 60%;
+    border-radius: 0.5rem;
+    padding: 30px 16px;
+  }
+
+  .tip-amount {
+    margin-bottom: 1.7rem;
+  }
+
+  .total-amount {
+    margin-bottom: 1.7rem;
+  }
+
+  .amount {
+    font-weight: bold;
+    font-size: 28px;
+    color: var(--strong-cyan);
+  }
+
+  .resetSection {
+    margin-top: auto;
+  }
+}
+
+
